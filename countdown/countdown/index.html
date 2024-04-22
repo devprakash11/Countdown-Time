@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Countdown Timer</title>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <section class="container">
+        <div class="controls">
+            <button data-sec="10">10sec</button>
+            <button data-sec="20">20sec</button>
+            <button data-sec="300">5min</button>
+            <button data-sec="900">15min</button>
+            <button data-sec="1800">30min</button>
+            <button data-sec="3600">Lunch Break</button>
+            <input type="number" name="time" id="customTime" placeholder="Time in Minutes" max="6000" min="0">
+        </div>
+
+        <div class="timer">
+            <div class="progress">
+                <svg id="progress-bar" width="300" height="300">
+                    <circle cx="150" cy="150" r="135"></circle>
+                    <circle cx="150" cy="150" r="135"></circle>
+                </svg>
+                <div id="progress-pointer"></div>
+            </div>
+            <span id="currentTime">00:00:00</span>
+        </div>
+        <button id="clear">Clear</button>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
